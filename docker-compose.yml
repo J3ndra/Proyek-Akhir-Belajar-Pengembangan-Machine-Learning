@@ -1,0 +1,19 @@
+services:
+  tensorflow_serving:
+    image: tensorflow/serving:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./saved_model:/models/animals_10_classification
+    environment:
+      - MODEL_NAME=animals_10_classification
+      - MODEL_BASE_PATH=/models
+
+  fastapi_backend:
+    build: ./fastapi_app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - tensorflow_serving
+    volumes:
+      - ./fastapi_app:/app
