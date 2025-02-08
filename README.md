@@ -22,4 +22,4 @@ Pastikan [Docker](https://www.docker.com/) sudah terinstall pada perangkat Anda.
 2. Salin URL `http://localhost:8000/predict` pada [Postman](https://www.postman.com/)
 3. Pada `Body` -> `form-data`, masukkan `Key` dengan nama `file` dan masukkan salah satu gambar yang terdapat pada `Test Data`.
 
-![Contoh](Screenshot\1.jpg)
+![Contoh](Screenshot/1.jpg)
