@@ -1,5 +1,7 @@
 # Proyek Klasifikasi Gambar
 
+> Python 3.11.11
+
 ### Informasi Dataset
 
 Dataset diambil dari Kaggle [https://www.kaggle.com/datasets/alessiocorrado99/animals10](https://www.kaggle.com/datasets/alessiocorrado99/animals10).
